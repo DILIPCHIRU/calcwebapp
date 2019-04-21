@@ -7,6 +7,6 @@ node{
         sh "${mvnHome}/bin/mvn package"
     }
     stage('Deploy to Tomcat'){ 
-        sh 'cp target/*.war /opt/tomcat9/webapps'
+        sh 'cp target/*.war /opt/Tomcat9/apache-tomcat-9.0.17/webapps'
     }    
 }
